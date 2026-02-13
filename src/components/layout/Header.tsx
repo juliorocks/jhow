@@ -14,7 +14,7 @@ export function Header() {
                 <Link href="/" className="relative flex items-center gap-2">
                     <div className="relative w-32 h-10">
                         <Image
-                            src="/logo.png"
+                            src="/logo.svg"
                             alt="JHOW Agência"
                             fill
                             className="object-contain object-left"

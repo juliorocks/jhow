@@ -1,0 +1,16 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dot on J -->
+  <circle cx="20" cy="15" r="8" fill="#E11D48"/>
+  
+  <!-- J -->
+  <path d="M20 25 V42 C20 49 14 52 8 52" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- H -->
+  <path d="M45 15 V45 M45 30 H65 M65 15 V45" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- O -->
+  <path d="M95 30 A15 15 0 1 0 95 30.01 Z" stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- W -->
+  <path d="M125 15 L132 45 L142 25 L152 45 L160 15" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
