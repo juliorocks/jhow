@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Linkedin, Instagram, ArrowRight } from "lucide-react";
 
@@ -6,8 +7,13 @@ export function Footer() {
         <footer className="w-full bg-black py-16 text-muted-foreground border-t border-white/5">
             <div className="container px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div className="space-y-4">
-                    <Link href="/" className="text-3xl font-bold tracking-tighter text-white">
-                        JHOW<span className="text-primary">.AGENCY</span>
+                    <Link href="/" className="relative block w-40 h-12">
+                        <Image
+                            src="/logo.png"
+                            alt="JHOW Agência"
+                            fill
+                            className="object-contain object-left"
+                        />
                     </Link>
                     <p className="max-w-xs text-sm">
                         Boutique Estratégica de Arquitetura de Marketing e Sistemas Inteligentes com IA.

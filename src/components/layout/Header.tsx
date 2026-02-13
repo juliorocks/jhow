@@ -5,12 +5,22 @@ import { cn } from "@/lib/utils";
 // Make sure to implement MobileMenu
 import { Menu } from "lucide-react";
 
+import Image from "next/image";
+
 export function Header() {
     return (
         <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
             <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-                <Link href="/" className="text-2xl font-bold tracking-tighter">
-                    JHOW<span className="text-primary">.AGENCY</span>
+                <Link href="/" className="relative flex items-center gap-2">
+                    <div className="relative w-32 h-10">
+                        <Image
+                            src="/logo.png"
+                            alt="JHOW Agência"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
+                    </div>
                 </Link>
                 <nav className="hidden md:flex gap-8 items-center text-sm font-medium text-muted-foreground">
                     <Link href="/sobre" className="hover:text-primary transition-colors">Sobre</Link>

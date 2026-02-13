@@ -141,9 +141,20 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.gradient-text {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)));
+/* Container Utility */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1400px;
+  /* Optional: setting a strict max-width */
+}
+
+/* Responsive breakpoints are handled by Tailwind's component automatically if I use @utility */
+/* But since I'm mixing, let's just use standard CSS or ensure @apply works */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
 }
