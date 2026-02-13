@@ -48,7 +48,7 @@ export function CyberCircuitBackground() {
                 if (!ctx) return;
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = "rgba(6, 182, 212, 0.5)"; // Neon Cyan (primary/cyan-500 equivalent)
+                ctx.fillStyle = "rgba(6, 182, 212, 0.8)"; // Increased opacity
                 ctx.fill();
             }
         }
@@ -75,8 +75,8 @@ export function CyberCircuitBackground() {
 
                     if (distance < connectionDistance) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(6, 182, 212, ${0.15 * (1 - distance / connectionDistance)
-                            })`; // Fade out with distance
+                        ctx.strokeStyle = `rgba(6, 182, 212, ${0.3 * (1 - distance / connectionDistance)
+                            })`; // Increased opacity
                         ctx.lineWidth = 1;
                         ctx.moveTo(p.x, p.y);
                         ctx.lineTo(p2.x, p2.y);
@@ -103,7 +103,7 @@ export function CyberCircuitBackground() {
     return (
         <canvas
             ref={canvasRef}
-            className="absolute inset-0 z-0 pointer-events-none opacity-40" // Low opacity for subtlety
+            className="absolute inset-0 z-1 pointer-events-none opacity-60" // Start at z-1, higher base opacity
         />
     );
 }

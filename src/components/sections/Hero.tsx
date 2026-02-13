@@ -8,13 +8,13 @@ import { CyberCircuitBackground } from "@/components/ui/CyberCircuitBackground";
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-700/20 via-background to-background">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background">
             {/* Background Elements */}
-            <div className="absolute inset-0 bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none z-10" />
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-background via-background to-primary/5 opacity-50 z-0" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gray-700/20 via-background to-background z-0" />
             <CyberCircuitBackground />
+            <div className="absolute inset-0 bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none z-10" />
 
-            <div className="container relative z-10 px-6 text-center">
+            <div className="container relative z-20 px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
