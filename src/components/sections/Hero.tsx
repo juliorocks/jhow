@@ -24,9 +24,8 @@ export function Hero() {
                         <span>Inteligência Artificial Aplicada</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-4">
-                        Arquitetamos ecossistemas de <br />
-                        Marketing e Comunicação com Inteligência Artificial
+                    <h1 className="text-4xl md:text-6xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-4 max-w-3xl mx-auto">
+                        Arquitetamos ecossistemas de Marketing e Comunicação com Inteligência Artificial
                     </h1>
 
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
