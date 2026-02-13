@@ -1,7 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { Methodology } from "@/components/sections/Methodology";
-import { Cases } from "@/components/sections/Cases";
+
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 
@@ -31,7 +31,6 @@ export default function Home() {
 
       {/* Main Sections */}
       <Features />
-      <Cases className="bg-gradient-to-b from-black to-background" />
       <Methodology />
 
       {/* Final CTA Section */}
@@ -45,7 +44,11 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
             Agende uma reunião estratégica para entendermos como arquitetar o próximo nível do seu negócio.
           </p>
-          <Link href="/contato" className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg rounded-full hover:shadow-[0_0_40px_-10px_var(--primary)] hover:scale-105 transition-all group">
+          <Link
+            href="https://wa.me/5512996836409?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20estrat%C3%A9gica."
+            target="_blank"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-lg rounded-full hover:shadow-[0_0_40px_-10px_var(--primary)] hover:scale-105 transition-all group"
+          >
             <Calendar className="w-5 h-5 group-hover:scale-110 transition-transform" />
             Agendar Reunião Estratégica
           </Link>

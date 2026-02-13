@@ -40,10 +40,8 @@ export function Footer() {
                 <div className="space-y-4">
                     <h4 className="text-white font-semibold">Empresa</h4>
                     <ul className="space-y-2 text-sm">
-                        <li><Link href="/sobre" className="hover:text-primary transition-colors">Sobre Nós</Link></li>
                         <li><Link href="/metodologia" className="hover:text-primary transition-colors">Metodologia</Link></li>
-                        <li><Link href="/cases" className="hover:text-primary transition-colors">Cases</Link></li>
-                        <li><Link href="/contato" className="hover:text-primary transition-colors">Contato</Link></li>
+                        <li><Link href="https://wa.me/5512996836409" target="_blank" className="hover:text-primary transition-colors">Contato (WhatsApp)</Link></li>
                     </ul>
                 </div>
 

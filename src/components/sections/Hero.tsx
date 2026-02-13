@@ -34,11 +34,15 @@ export function Hero() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-                        <Link href="/contato" className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:brightness-110 transition-all w-full sm:w-auto flex items-center justify-center gap-2 group">
-                            Solicitar Diagnóstico
+                        <Link
+                            href="https://wa.me/5512996836409?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20para%20minha%20empresa."
+                            target="_blank"
+                            className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:brightness-110 transition-all w-full sm:w-auto flex items-center justify-center gap-2 group"
+                        >
+                            Falar com Especialista
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <Link href="/sobre" className="px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-lg hover:bg-white/10 transition-all w-full sm:w-auto">
+                        <Link href="/metodologia" className="px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-lg hover:bg-white/10 transition-all w-full sm:w-auto">
                             Conheça nossa abordagem
                         </Link>
                     </div>
