@@ -1,0 +1,41 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#09090b"/>
+  
+  <!-- Grid Background -->
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#27272a" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" />
+  
+  <!-- Abstract Architecture: Nodes and Connection -->
+  <g stroke="#3b82f6" stroke-width="2" fill="#09090b">
+    <!-- Center Hub -->
+    <circle cx="400" cy="300" r="40" stroke="#60a5fa" stroke-width="4" fill="#1e3a8a" fill-opacity="0.5" />
+    <circle cx="400" cy="300" r="20" fill="#60a5fa" />
+    
+    <!-- Satellite Nodes -->
+    <line x1="400" y1="300" x2="200" y2="150" stroke-dasharray="5,5" />
+    <circle cx="200" cy="150" r="15" />
+    
+    <line x1="400" y1="300" x2="600" y2="150" stroke-dasharray="5,5" />
+    <circle cx="600" cy="150" r="15" />
+    
+    <line x1="400" y1="300" x2="200" y2="450" stroke-dasharray="5,5" />
+    <circle cx="200" cy="450" r="15" />
+    
+    <line x1="400" y1="300" x2="600" y2="450" stroke-dasharray="5,5" />
+    <circle cx="600" cy="450" r="15" />
+    
+    <!-- Connecting Lines between Satellites -->
+    <path d="M 200 150 Q 400 100 600 150" fill="none" stroke="#2563eb" opacity="0.5" />
+    <path d="M 200 450 Q 400 500 600 450" fill="none" stroke="#2563eb" opacity="0.5" />
+  </g>
+  
+  <!-- Floating Elements -->
+  <circle cx="350" cy="250" r="5" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="450" cy="350" r="5" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite" />
+  </circle>
+</svg>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { BrainCircuit, Database, FileText, Layers } from "lucide-react";
 
 export default function SolucoesPage() {
@@ -8,28 +9,32 @@ export default function SolucoesPage() {
             title: "Arquitetura Estratégica",
             desc: "O alicerce do crescimento.",
             content: "Desenvolvemos o blueprint completo do ecossistema de marketing da sua empresa. Mapeamos jornadas, definimos canais e estruturamos a comunicação para garantir que cada peça do sistema trabalhe em sintonia, maximizando o ROI.",
-            features: ["Mapeamento de Jornada", "Planejamento Multicanal", "Auditoria de Ecossistema"]
+            features: ["Mapeamento de Jornada", "Planejamento Multicanal", "Auditoria de Ecossistema"],
+            image: "/images/solucoes/arquitetura.svg"
         },
         {
             icon: BrainCircuit,
             title: "Sistemas Inteligentes com IA",
             desc: "Automação e personalização em escala.",
             content: "Implementamos agentes de IA, chatbots avançados e sistemas preditivos que aprendem com o comportamento do seu cliente. Transformamos dados brutos em ações automáticas que geram receita 24/7.",
-            features: ["Chatbots Cognitivos", "Personalização Dinâmica", "Análise Preditiva"]
+            features: ["Chatbots Cognitivos", "Personalização Dinâmica", "Análise Preditiva"],
+            image: "/images/solucoes/ia.svg"
         },
         {
             icon: FileText,
             title: "Projetos Editoriais Estruturados",
             desc: "Conteúdo com autoridade técnica.",
             content: "Não fazemos apenas posts para redes sociais. Criamos estruturas editoriais robustas — de portais de conteúdo a whitepapers técnicos — que posicionam sua marca como líder de pensamento no setor.",
-            features: ["Portais de Conteúdo", "Whitepapers & E-books", "Estratégia SEO Técnica"]
+            features: ["Portais de Conteúdo", "Whitepapers & E-books", "Estratégia SEO Técnica"],
+            image: "/images/solucoes/editorial.svg"
         },
         {
             icon: Database,
             title: "Marketing Orientado a Dados",
             desc: "Decisões baseadas em evidências.",
             content: "Implementamos dashboards em tempo real e cultura de testes A/B. Eliminamos o 'achismo' da mesa de decisão, fornecendo inteligência acionável para toda a diretoria.",
-            features: ["Dashboards BI", "Cultura de Testes A/B", "Atribuição Multi-touch"]
+            features: ["Dashboards BI", "Cultura de Testes A/B", "Atribuição Multi-touch"],
+            image: "/images/solucoes/dados.svg"
         }
     ];
 
@@ -70,13 +75,18 @@ export default function SolucoesPage() {
                             </ul>
                         </div>
 
-                        <div className="flex-1 w-full relative aspect-square md:aspect-video rounded-3xl overflow-hidden bg-gradient-to-br from-white/5 to-white/0 border border-white/10 p-1">
-                            <div className="absolute inset-0 bg-grid-white/[0.05]" />
-                            <div className="flex items-center justify-center w-full h-full text-muted-foreground bg-black/40 backdrop-blur-sm">
-                                <span className="text-xs font-mono border border-white/10 px-4 py-2 rounded-full">
-                                    [Ilustração Técnica: {sol.title}]
-                                </span>
+                        <div className="flex-1 w-full relative aspect-square md:aspect-video rounded-3xl overflow-hidden bg-gradient-to-br from-white/5 to-white/0 border border-white/10 p-1 group">
+                            <div className="absolute inset-0 bg-grid-white/[0.05] z-10" />
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src={sol.image}
+                                    alt={sol.title}
+                                    fill
+                                    className="object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500 hover:scale-105 transform"
+                                />
                             </div>
+                            {/* Overlay gradient for better text readability if needed, though images are dark */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
                         </div>
 
                     </div>

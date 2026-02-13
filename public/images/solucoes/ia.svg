@@ -1,0 +1,49 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#09090b"/>
+  
+  <!-- Neural Network Background -->
+  <g opacity="0.2">
+    <!-- Lines suggesting complexity -->
+    <path d="M 0 0 L 800 600" stroke="#a855f7" stroke-width="0.5" />
+    <path d="M 0 600 L 800 0" stroke="#a855f7" stroke-width="0.5" />
+    <circle cx="400" cy="300" r="250" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.3" />
+  </g>
+  
+  <!-- Brain / Head Simplified Shape -->
+  <g transform="translate(400,300) scale(1.2)">
+    <!-- Circuit lines within the brain shape -->
+    <path d="M -50 -80 Q 0 -120 50 -80 L 70 -20 Q 80 20 60 70 L 30 100 Q 0 120 -30 100 L -60 70 Q -80 20 -70 -20 Z" 
+          fill="none" stroke="#a855f7" stroke-width="2" />
+    
+    <!-- Nodes representing thoughts/processes -->
+    <circle cx="-30" cy="-50" r="4" fill="#22d3ee">
+       <animate attributeName="r" values="4;6;4" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="30" cy="-50" r="4" fill="#22d3ee">
+       <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="20" r="6" fill="#ec4899" opacity="0.8">
+       <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="-40" cy="50" r="3" fill="#ffffff" />
+    <circle cx="40" cy="50" r="3" fill="#ffffff" />
+    
+    <!-- Connecting lines -->
+    <line x1="-30" y1="-50" x2="0" y2="20" stroke="#ffffff" stroke-width="1" opacity="0.6" />
+    <line x1="30" y1="-50" x2="0" y2="20" stroke="#ffffff" stroke-width="1" opacity="0.6" />
+    <line x1="0" y1="20" x2="-40" y2="50" stroke="#ffffff" stroke-width="1" opacity="0.6" />
+  </g>
+  
+  <!-- "Chat" bubbles rising -->
+  <rect x="500" y="200" width="80" height="20" rx="10" fill="#a855f7" opacity="0.5" />
+  <rect x="550" y="230" width="60" height="15" rx="7" fill="#22d3ee" opacity="0.5" />
+  
+  <!-- Glow Effect -->
+  <circle cx="400" cy="300" r="100" fill="url(#grad1)" opacity="0.1" />
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0" />
+    </radialGradient>
+  </defs>
+</svg>
