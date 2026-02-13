@@ -9,7 +9,7 @@ export function Footer() {
                 <div className="space-y-4">
                     <Link href="/" className="relative block w-40 h-12">
                         <Image
-                            src="/logo.svg"
+                            src="/logo-white.png"
                             alt="JHOW Agência"
                             fill
                             className="object-contain object-left"
