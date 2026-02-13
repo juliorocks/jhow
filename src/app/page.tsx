@@ -4,6 +4,7 @@ import { Methodology } from "@/components/sections/Methodology";
 
 import Link from "next/link";
 import { Calendar } from "lucide-react";
+import { StrategyFlow } from "@/components/ui/StrategyFlow";
 
 export default function Home() {
   return (
@@ -15,17 +16,9 @@ export default function Home() {
       <section className="py-24 bg-background border-y border-white/5">
         <div className="container px-6 text-center max-w-4xl mx-auto space-y-8">
           <h2 className="text-2xl md:text-3xl font-light text-muted-foreground leading-relaxed">
-            A Jhow não é uma agência tradicional. Somos uma <span className="text-white font-semibold">boutique de arquitetura estratégica</span> especializada em estruturar ecossistemas de comunicação integrados com Inteligência Artificial.
+            A Jhow não é uma agência tradicional. Somos uma <span className="text-white font-semibold">boutique de arquitetura estratégica</span> especializada na construção de ecossistemas de marketing e comunicação integrados com Inteligência Artificial, dados e tecnologia.
           </h2>
-          <div className="flex justify-center items-center gap-4 text-sm font-mono text-primary/80 pt-8" aria-hidden="true">
-            <span>ESTRATÉGIA</span>
-            <span className="w-8 h-[1px] bg-primary/20"></span>
-            <span>ARQUITETURA</span>
-            <span className="w-8 h-[1px] bg-primary/20"></span>
-            <span>TECNOLOGIA</span>
-            <span className="w-8 h-[1px] bg-primary/20"></span>
-            <span>RESULTADO</span>
-          </div>
+          <StrategyFlow />
         </div>
       </section>
 

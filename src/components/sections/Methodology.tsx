@@ -39,6 +39,9 @@ export function Methodology() {
                     <h2 className="text-3xl md:text-5xl font-bold mt-2">
                         JHOW Framework™
                     </h2>
+                    <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                        Metodologia proprietária para desenvolvimento de soluções estratégicas com IA.
+                    </p>
                 </div>
 
                 <div className="max-w-3xl mx-auto">

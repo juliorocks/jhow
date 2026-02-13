@@ -16,7 +16,7 @@ export function Footer() {
                         />
                     </Link>
                     <p className="max-w-xs text-sm">
-                        Boutique Estratégica de Arquitetura de Marketing e Sistemas Inteligentes com IA.
+                        Boutique Estratégica de Arquitetura de Marketing, Comunicação e Sistemas Inteligentes com IA.
                     </p>
                     <div className="flex gap-4 pt-2">
                         <Link href="https://linkedin.com" target="_blank" className="hover:text-primary transition-colors">

@@ -12,7 +12,7 @@ const features = [
     {
         icon: Network,
         title: "Arquitetura Estratégica",
-        description: "Planejamento estrutural de ecossistemas digitais que integram todas as pontas da comunicação.",
+        description: "Planejamento estrutural de ecossistemas digitais que integram todas as frentes da comunicação.",
     },
     {
         icon: Cpu,

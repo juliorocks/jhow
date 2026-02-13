@@ -25,12 +25,12 @@ export function Hero() {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-4">
-                        Arquitetura Estratégica de <br />
-                        Marketing e Comunicação
+                        Arquitetamos ecossistemas de <br />
+                        Marketing e Comunicação com Inteligência Artificial
                     </h1>
 
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                        Desenvolvemos sistemas inteligentes, estruturas personalizadas e ecossistemas de comunicação para organizações que buscam inovação real.
+                        Desenvolvemos sistemas inteligentes, estruturas personalizadas e ecossistemas de comunicação para organizações que buscam inovação real, escalável e sustentável.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
