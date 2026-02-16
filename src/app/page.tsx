@@ -26,7 +26,7 @@ export default function Home() {
       {/* Main Sections */}
       <Features />
       <Methodology />
-      <Cases /> {/* Add Cases section */}
+      {/* <Cases /> */} {/* Oculto temporariamente */}
 
       {/* Final CTA Section */}
       <section className="py-32 bg-primary/5 relative overflow-hidden">
