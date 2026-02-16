@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { Methodology } from "@/components/sections/Methodology";
+import { Cases } from "@/components/sections/Cases"; // Import Cases
 
 import Link from "next/link";
 import { Calendar } from "lucide-react";
@@ -25,6 +26,7 @@ export default function Home() {
       {/* Main Sections */}
       <Features />
       <Methodology />
+      <Cases /> {/* Add Cases section */}
 
       {/* Final CTA Section */}
       <section className="py-32 bg-primary/5 relative overflow-hidden">
