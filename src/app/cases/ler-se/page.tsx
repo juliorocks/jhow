@@ -198,7 +198,7 @@ export default function LerSeCase() {
                                     <div className="w-2 h-2 rounded-full bg-green-500/50" />
                                 </div>
                                 <div className="pt-6 bg-zinc-900">
-                                    <img src="https://placehold.co/1200x800/151515/FFFFFF/png?text=Dashboard+Preview" alt="Dashboard Ler-se" className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+                                    <img src="/cases/ler-se/dashboard.png" alt="Dashboard Ler-se" className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity" />
                                 </div>
                             </motion.div>
                         </div>
@@ -217,7 +217,7 @@ export default function LerSeCase() {
                                     <div className="w-2 h-2 rounded-full bg-green-500/50" />
                                 </div>
                                 <div className="pt-6 bg-zinc-900">
-                                    <img src="https://placehold.co/1200x800/151515/FFFFFF/png?text=Player+Preview" alt="Player de Aula Ler-se" className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+                                    <img src="/cases/ler-se/player.png" alt="Player de Aula Ler-se" className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity" />
                                 </div>
                             </motion.div>
 
