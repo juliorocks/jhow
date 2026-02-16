@@ -71,16 +71,16 @@ export function Cases({ className }: { className?: string }) {
                             onClick={() => handleOpenCase(project)}
                         >
                             <div className="relative aspect-video rounded-xl overflow-hidden mb-4 bg-muted border border-white/10 group-hover:border-primary/50 transition-colors">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                                 {project.image && !project.image.includes("placeholder") ? (
                                     // Using a simple img tag here for simplicity, or Next.js Image if we had dimensions. 
                                     // Since we don't know if the user has domains configured for external images, standard img is safer for external URLs unless configured.
-                                    <img src={project.image} alt={project.client} className="absolute inset-0 w-full h-full object-cover -z-10 group-hover:scale-105 transition-transform duration-500" />
+                                    <img src={project.image} alt={project.client} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                                 ) : (
                                     <div className="absolute inset-0 flex items-center justify-center text-muted-foreground opacity-50 bg-neutral-900">
                                         <span className="text-xs">[Imagem do Projeto]</span>
                                     </div>
                                 )}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
                             </div>
 
                             <div className="space-y-2">
