@@ -31,7 +31,7 @@ export default function LerSeCase() {
                             Clube Ler-se
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                            Um ecossistema digital completo para a maior comunidade de educação clássica do Brasil.
+                            Um ecossistema completo criado para o Clube de Leitura Ler-Se.
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4 pt-4">
