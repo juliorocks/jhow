@@ -19,7 +19,7 @@ const cases: Case[] = [
         client: "Ler-se",
         category: "Plataforma de Assinatura",
         description: "Clube de leitura exclusivo com sistema de assinatura, gestão de membros e conteúdo premium.",
-        image: "https://lerse.com.br/assets/images/social-share.jpg", // Tentei pegar uma imagem publica, se não funcionar vai falhar, melhor usar placeholder
+        image: "https://image.thum.io/get/width/1200/crop/675/https://lerse.com.br",
         url: "https://lerse.com.br",
     },
     {
