@@ -167,6 +167,75 @@ export default function LerSeCase() {
                 </div>
             </section>
 
+            {/* UI Gallery Section */}
+            <section className="py-24 border-t border-white/5 bg-black/20">
+                <div className="container px-6">
+                    <h2 className="text-3xl font-bold mb-16 text-center">Por Dentro da Plataforma</h2>
+
+                    <div className="space-y-24">
+                        {/* Screenshot 1: Dashboard */}
+                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                            <motion.div
+                                initial={{ opacity: 0, x: -40 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                className="order-2 md:order-1"
+                            >
+                                <h3 className="text-2xl font-bold mb-4">Dashboard do Aluno</h3>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Uma visão centralizada de todas as atividades, com destaque para o <strong>Livro do Mês</strong>, calendário de aulas ao vivo e acesso rápido aos conteúdos mais recentes. O design foca na clareza e na imersão desde o primeiro acesso.
+                                </p>
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                className="order-1 md:order-2 relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group"
+                            >
+                                <div className="absolute top-0 left-0 right-0 h-6 bg-zinc-900 border-b border-white/5 flex items-center px-4 gap-2">
+                                    <div className="w-2 h-2 rounded-full bg-red-500/50" />
+                                    <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
+                                    <div className="w-2 h-2 rounded-full bg-green-500/50" />
+                                </div>
+                                <div className="pt-6 bg-zinc-900">
+                                    <img src="/cases/ler-se/dashboard.png" alt="Dashboard Ler-se" className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+                                </div>
+                            </motion.div>
+                        </div>
+
+                        {/* Screenshot 2: Class Player */}
+                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                className="relative rounded-xl overflow-hidden border border-white/10 shadow-2xl group"
+                            >
+                                <div className="absolute top-0 left-0 right-0 h-6 bg-zinc-900 border-b border-white/5 flex items-center px-4 gap-2">
+                                    <div className="w-2 h-2 rounded-full bg-red-500/50" />
+                                    <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
+                                    <div className="w-2 h-2 rounded-full bg-green-500/50" />
+                                </div>
+                                <div className="pt-6 bg-zinc-900">
+                                    <img src="/cases/ler-se/player.png" alt="Player de Aula Ler-se" className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+                                </div>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, x: 40 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                            >
+                                <h3 className="text-2xl font-bold mb-4">Sala de Aula Imersiva</h3>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Experiência de aprendizado sem distrações. O player integra vídeo, <strong>podcast</strong> (para ouvir em movimento), bloco de notas pessoal e materiais de apoio em uma única interface coesa.
+                                </p>
+                            </motion.div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Tech Stack */}
             <section className="py-24 border-t border-white/5">
                 <div className="container px-6 text-center">
