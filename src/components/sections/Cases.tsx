@@ -20,7 +20,7 @@ const cases: Case[] = [
         client: "Ler-se",
         category: "Plataforma de Assinatura",
         description: "Clube de leitura exclusivo com sistema de assinatura, gestão de membros e conteúdo premium.",
-        image: "https://s0.wp.com/mshots/v1/https://lerse.com.br?w=800",
+        image: "/cases/ler-se/dashboard.png",
         url: "https://lerse.com.br",
         slug: "ler-se",
     },

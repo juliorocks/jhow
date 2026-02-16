@@ -56,7 +56,7 @@ export default function LerSeCase() {
                         <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900/50 backdrop-blur-sm group">
                             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
                             <Image
-                                src="https://s0.wp.com/mshots/v1/https://lerse.com.br?w=1200"
+                                src="/cases/ler-se/dashboard.png"
                                 alt="Ler-se Platform Preview"
                                 fill
                                 className="object-cover object-top opacity-80 group-hover:opacity-100 transition-opacity duration-700"
@@ -240,15 +240,14 @@ export default function LerSeCase() {
             <section className="py-24 border-t border-white/5">
                 <div className="container px-6 text-center">
                     <h2 className="text-3xl font-bold mb-12">Stack Tecnológico</h2>
-                    <div className="flex flex-wrap justify-center gap-8 md:gap-12 opacity-80">
-                        {/* Tech logos placeholders - utilizing text for simplicity matching style */}
-                        <TechItem name="React 18" />
-                        <TechItem name="Vite" />
-                        <TechItem name="TypeScript" />
-                        <TechItem name="Tailwind CSS" />
-                        <TechItem name="Supabase" />
-                        <TechItem name="Asaas API" />
-                        <TechItem name="React Query" />
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+                        <TechItem name="React" slug="react" color="61DAFB" />
+                        <TechItem name="Vite" slug="vite" color="646CFF" />
+                        <TechItem name="TypeScript" slug="typescript" color="3178C6" />
+                        <TechItem name="Tailwind" slug="tailwindcss" color="06B6D4" />
+                        <TechItem name="Supabase" slug="supabase" color="3ECF8E" />
+                        <TechItem name="React Query" slug="reactquery" color="FF4154" />
+                        <TechItem name="Zod" slug="zod" color="3E67B1" />
                     </div>
                 </div>
             </section>
@@ -299,10 +298,19 @@ function FeatureCard({ icon, title, desc }: { icon: React.ReactNode, title: stri
     );
 }
 
-function TechItem({ name }: { name: string }) {
+function TechItem({ name, slug, color }: { name: string, slug: string, color: string }) {
     return (
-        <span className="text-xl font-semibold text-muted-foreground hover:text-white transition-colors cursor-default">
-            {name}
-        </span>
+        <div className="group flex flex-col items-center gap-3 transition-all duration-300">
+            <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center p-3 group-hover:bg-white/10 group-hover:border-primary/50 transition-all duration-300">
+                <img
+                    src={`https://cdn.simpleicons.org/${slug}/${color}`}
+                    alt={name}
+                    className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
+                />
+            </div>
+            <span className="text-xs font-mono text-muted-foreground group-hover:text-white transition-colors uppercase tracking-widest">
+                {name}
+            </span>
+        </div>
     );
 }
